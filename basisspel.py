@@ -5,11 +5,6 @@ import slechtstekans
 import time
 import random
 
-#de drie algorithmes die het spel kunnen spelen
-#als alle drie Fasle zijn, dan speelt de gebruiker zelf
-simple = 0
-worst = 1
-willekeurig = 0
 
 
 
@@ -78,9 +73,9 @@ def play(simple,worst,willekeurig):
         #geef de feedback weer
         feedback_printen(fb)
         
-        #print een witregel en laat de tijd een halve seconde wachten (voor de sier)
+        #print een witregel en laat de tijd een tijdje vertragen wachten (voor de sier)
         print("")
-        time.sleep(0.5)
+        time.sleep(0.1)
     
     #laat de gebruiker weten dat de code niet is geraden
     if not gewonnen:
